@@ -1,10 +1,23 @@
+html,
+body {
+   height:100%;
+}
+
 #display{
   background: white;
 }
-#foo{
-    position: fixed;
+#container {
+   min-height:100%;
+   position:relative;
+}
+#body {
+   padding:10px;
+   padding-bottom:60px;   /* Height of the footer */
+}
+#footer{
+    position: absolute;
     text-align: center;
     width:100%;
-    left: 0;
+    height:60px;
     bottom: 0; 
 }
