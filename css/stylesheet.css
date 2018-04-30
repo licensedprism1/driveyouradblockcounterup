@@ -1,10 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Eczar:600|Merriweather:700,700i');
 
+html,body {
+    height: 100%;
+}
+
 body {
     background-color: #f5f4f2;     
     font-family: 'Merriweather', serif;
     color:#2c2c2c;
     font-size: 20px;
+    background-image: url(/images/bg_main.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: bottom right;
+    margin: 0px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -15,21 +24,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .wrapper {
     margin: 0 auto;
-    margin-top: 6%;
     max-width: 1000px;
     padding: 40px;
+    padding-top: 10%
 }
 
 .wrapper h1 {
     font-size: 95px;
     line-height: 1;
-    margin: 0 0 300px 0;
+    margin: 0 0 200px 0;
 }
 
 .wrapper.main {
-    background-image: url(/images/bg_main.png);
-    background-repeat: no-repeat;
-    background-size: cover;
     min-height: 550px;
 }
 
@@ -42,9 +48,15 @@ a.btn {
     background-color: #fea521;
     display: inline-block;
     padding: 22px 30px;
-    margin: 0 5px 5px 0;
+    margin: 0 5px 5px 0;    
+    transition: all 0.5s ease-out;
+}
+
+.btn div:hover {
+    background-color: #ffb546;
 }
 
 .wrapper p {
-    width: 40%;
+    width: 50%;
+    line-height: 1.6;
 }
