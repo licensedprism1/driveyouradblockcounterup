@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Eczar:600|Work+Sans:400,500,700');
+
 body {
     background-color: #f5f4f2;
+    font-family: 'Work Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Eczar', serif;
 }
