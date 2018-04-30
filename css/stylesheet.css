@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Eczar:600|Work+Sans:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Eczar:600|Merriweather:700,700i');
 
 body {
-    background-color: #f5f4f2;
-    font-family: 'Work Sans', sans-serif;
+    background-color: #f5f4f2;     
+    font-family: 'Merriweather', serif;
+    color:#2c2c2c;
+    font-size: 20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -13,14 +15,36 @@ h1, h2, h3, h4, h5, h6 {
 
 .wrapper {
     margin: 0 auto;
-    margin-top: 10%;
-    max-width: 800px;
+    margin-top: 6%;
+    max-width: 1000px;
     padding: 40px;
-    font-size: 18px;
 }
 
 .wrapper h1 {
-    font-size: 60px;
+    font-size: 95px;
     line-height: 1;
-    margin: 0 0 60px 0;
+    margin: 0 0 300px 0;
+}
+
+.wrapper.main {
+    background-image: url(/images/bg_main.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 550px;
+}
+
+a.btn {
+    text-decoration: none;
+    color:#2c2c2c;
+}
+
+.btn div {
+    background-color: #fea521;
+    display: inline-block;
+    padding: 22px 30px;
+    margin: 0 5px 5px 0;
+}
+
+.wrapper p {
+    width: 40%;
 }
