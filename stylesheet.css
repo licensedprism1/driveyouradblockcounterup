@@ -10,3 +10,17 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0px;
     font-family: 'Eczar', serif;
 }
+
+.wrapper {
+    margin: 0 auto;
+    margin-top: 10%;
+    max-width: 800px;
+    padding: 40px;
+    font-size: 18px;
+}
+
+.wrapper h1 {
+    font-size: 60px;
+    line-height: 1;
+    margin: 0 0 60px 0;
+}
