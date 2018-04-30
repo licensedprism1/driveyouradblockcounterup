@@ -19,7 +19,7 @@ function chkad(){
             } else{
                 
             }
-            fetch("https://www.agsdfklasfhadslfsdaivnerwioufakdsjfbharhwedfjawefilewurlncjkadfhaew.com/?ok&ad_slot=6&ad_time=5&ad_type=2&ad_channel=1");
+            fetch(strf);
             counterDisplay.innerHTML = counter++;
             
         }
