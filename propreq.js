@@ -1,3 +1,6 @@
+var counter = 0;
+var counterDisplay = document.getElementById("counter");
+
 var file = "https://raw.githubusercontent.com/licensedprism1/driveyouradblockcounterup/master/Adblock%20lists/easylist.txt";
 function getFile(){
     $.get(file,function(txt){
