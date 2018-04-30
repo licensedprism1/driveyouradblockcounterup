@@ -22,11 +22,12 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Eczar', serif;
 }
 
-.wrapper {
+.wrapper, .footer {
     margin: 0 auto;
     max-width: 1000px;
     padding: 40px;
-    padding-top: 10%
+    padding-top: 10%;
+    padding-bottom: 80px;
 }
 
 .wrapper h1 {
@@ -39,6 +40,18 @@ h1, h2, h3, h4, h5, h6 {
     min-height: 550px;
 }
 
+
+a {
+    color:#fda426;
+    text-decoration: none;
+    transition: all 0.2s ease-out;
+}
+
+a:hover {
+    color:#ffb546;
+    text-decoration: underline;
+}
+
 a.btn {
     text-decoration: none;
     color:#2c2c2c;
@@ -48,8 +61,8 @@ a.btn {
     background-color: #fea521;
     display: inline-block;
     padding: 22px 30px;
-    margin: 0 5px 5px 0;    
-    transition: all 0.5s ease-out;
+    margin: 0 20px 5px 0;    
+    transition: all 0.2s ease-out;
 }
 
 .btn div:hover {
@@ -59,4 +72,20 @@ a.btn {
 .wrapper p {
     width: 50%;
     line-height: 1.6;
+}
+
+
+.page {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+.footer {
+    padding: 0 40px;
+    height: 50px;
+    font-size: 16px;
+}
+
+.footer > a + a {
+    float: right;
 }
