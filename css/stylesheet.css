@@ -9,11 +9,19 @@ body {
     font-family: 'Merriweather', serif;
     color:#2c2c2c;
     font-size: 20px;
-    background-image: url(/images/bg_main.png);
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: bottom right;
     margin: 0px;
+}
+
+body.home {
+    background-image: url(/images/bg_main.png);
+}
+
+body.contributors {
+    background-image: url(/images/bg_contributors.png);
+    background-size: 60%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -33,6 +41,10 @@ h1, h2, h3, h4, h5, h6 {
 .wrapper h1 {
     font-size: 95px;
     line-height: 1;
+    margin: 0 0 50px 0;
+}
+
+.wrapper.main h1 {
     margin: 0 0 200px 0;
 }
 
