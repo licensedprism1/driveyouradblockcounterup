@@ -1,23 +1,26 @@
-html,
+@import url('https://fonts.googleapis.com/css?family=Eczar:600|Work+Sans:400,500,700');
+
 body {
-   height:100%;
+    background-color: #f5f4f2;
+    font-family: 'Work Sans', sans-serif;
 }
 
-#display{
-  background: white;
+h1, h2, h3, h4, h5, h6 {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Eczar', serif;
 }
-#container {
-   min-height:100%;
-   position:relative;
+
+.wrapper {
+    margin: 0 auto;
+    margin-top: 10%;
+    max-width: 800px;
+    padding: 40px;
+    font-size: 18px;
 }
-#body {
-   padding:10px;
-   padding-bottom:60px;   /* Height of the footer */
-}
-#footer{
-    position: absolute;
-    text-align: center;
-    width:100%;
-    height:60px;
-    bottom: 0; 
+
+.wrapper h1 {
+    font-size: 60px;
+    line-height: 1;
+    margin: 0 0 60px 0;
 }
