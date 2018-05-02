@@ -1,8 +1,9 @@
 var counter = 1;
 var counterDisplay = document.getElementById("counter");
+var disp = document.getElementById("aok");
 
 var file = "https://easylist.to/easylist/easylist.txt";
-var requestInterval = 1000;
+var requestInterval = 5;
 
 var HttpQueueObj = new HttpQueue(requestInterval);
 
@@ -20,17 +21,33 @@ function chkad(){
               }  else if(str.startsWith(".")){
                  strf = "https://www.adblocktester1Bd" + str;
               } else if(str.startsWith("/")){
-                 strf = "https://www.adblocktester1Bd" + str;
+                 strf = "https://www.adblocktester1Bd.com" + str;
+              } else if(str.startsWith("://")){
+                 strf = "https" + str + "/adasfdasdf83.html";
+              } else if(str.startsWith("=")){
+                 strf = "https://www.adblocktester1Bd.com/?type" + str;
+              } else if(str.startsWith("?")){
+                 strf = "https://www.adblocktester1Bd.com/" + str;
+              } else if(str.startsWith("^")){
+                 strf = "https://www.adblocktester1Bd.com/" + str;
+              } else if(str.startsWith("/\\") || str.startsWith("_")){
+                 strf = "https://www.adblocktester1Bd.com/a" + str;
+              } else if(str.startsWith("#")){
+                 strf = str;
+              } else if(str.startsWith("||")||str.startsWith("||@@")){
+                 str = str.replace("||", "");
+                 str = str.replace("@@", "");
+                 strf = "https://www.adblocktester1Bd.com/?" + str;
               } else{
-                  
+                 strf = "https://www.adblocktester1Bd.com/?" + str;
               }
               if (strf !== "") { 
                 HttpQueueObj.newRequest(strf, function(data) {
-                  console.log(data);
                   counterDisplay.innerHTML = counter++;
+                  disp.innerHtml = str;
                 }, function(err) {
-                  console.log(err);
                   counterDisplay.innerHTML = counter++;
+                  disp.innerHTML = str;
                 });
               }
           }
