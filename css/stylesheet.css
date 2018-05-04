@@ -24,6 +24,11 @@ body.contributors {
     background-size: 60%;
 }
 
+body.article {
+    background-image: url(/images/bg_stop.png);
+    background-size: 50%;
+}
+
 h1, h2, h3, h4, h5, h6 {
     padding: 0px;
     margin: 0px;
@@ -82,8 +87,12 @@ a.btn {
 }
 
 .wrapper p {
-    width: 50%;
+    width: 60%;
     line-height: 1.6;
+}
+
+.wrapper.main p {
+    width: 50%;
 }
 
 
@@ -96,8 +105,15 @@ a.btn {
     padding: 0 40px;
     height: 50px;
     font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.footer > a + a {
-    float: right;
+.wrapper p {
+    padding: 0 0 20px 0;
+}
+
+p.lead {
+    padding: 0;
 }
